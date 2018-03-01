@@ -210,7 +210,7 @@ class CardBlock extends Component {
               <Col md="8" lg="6" className="mr-auto mx-auto">
                 <Card>
                   <CardBody>
-                      <Form>
+                      <Form method="post" action="/">
                           <FormGroup className={this.errorClass(this.state.formErrors.cardnumberError)}>
                               <Row>
                                 <Col lg="2" md="2" sm="2" xs="6">
@@ -258,6 +258,7 @@ class CardBlock extends Component {
                               </Col>
                           </Row>
                           {BillingAdd}
+                          <input type="submit" text="Go go go" />
                       </Form>
                     </CardBody>
                 </Card>
